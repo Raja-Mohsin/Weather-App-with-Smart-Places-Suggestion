@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="7dp"
+        android:elevation="10dp"
+        app:strokeColor="@color/second_color"
+        app:strokeWidth="1dp"
+        android:theme="@style/Theme.MaterialComponents.DayNight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3"
+            android:padding="8dp"
+            android:background="@drawable/background_gradient">
+
+            <TextView
+                android:id="@+id/singleRecyclerItemTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2:00 PM"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:id="@+id/singleRecyclerItemIcon"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_weight="1"
+                android:src="@drawable/cloudy__1_"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/singleRecyclerItemTemperature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="29.0°C"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
